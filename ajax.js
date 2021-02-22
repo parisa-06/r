@@ -58,4 +58,33 @@ $(document).ready(function(e) {
 
     });
 
+
+
+
 });
+
+function myfunction() {
+    var parisa = {
+        "element": {
+            "type": "checkbox",
+            "lable": "check me!",
+            "id": "my-id"
+        }
+    };
+
+    console.log(parisa);
+
+    // $('#demo')
+    //     .append(
+    //         $(document.createElement('input')).attr({
+    //             id: parisa.id,
+    //             type: 'checkbox',
+    //             value: parisa.lable
+
+    //         })
+    //     );
+
+
+    $('<input />', { type: 'checkbox', id: parisa.id, value: "f" }).appendTo("#demo");
+
+}
